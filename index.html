@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="google-site-verification" content="UucoEbgiCVwC9hBtHwcsu2s8hsm8yR2bhtSJ7fQtZIg" />
+<!-- Button to Toggle Background Color (Initially Hidden) -->
+<button id="toggleMode" style="display: none;">DarkMode</button>
+
+<style>
+    /* Default Background */
+    body {
+        background-color: white;
+        transition: background-color 0.3s ease;
+        color: black;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Dark Mode Background */
+    body.black-white {
+        background-color: black;
+        color: white;
+    }
+
+    /* Button Styling */
+    #toggleMode {
+        background: black;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: 0.3s;
+    }
+
+    #toggleMode:hover {
+        background: gray;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const button = document.getElementById("toggleMode");
+        const body = document.body;
+
+        // Show button when the page loads
+        button.style.display = "block";
+
+        // Check if user has a saved preference
+        if (localStorage.getItem("bwMode") === "enabled") {
+            body.classList.add("black-white");
+            button.textContent = "Normal Background";
+        }
+
+        // Toggle Background Mode
+        button.addEventListener("click", function () {
+            if (body.classList.contains("black-white")) {
+                body.classList.remove("black-white");
+                localStorage.setItem("bwMode", "disabled");
+                button.textContent = "DarkMode";
+            } else {
+                body.classList.add("black-white");
+                localStorage.setItem("bwMode", "enabled");
+                button.textContent = "Normal Background";
+            }
+        });
+    });
+</script>
+    
+        <p>Online Visitors: <span id="visitorCount">0</span></p>
+
+        <script>
+            if (localStorage.getItem("visitorCount")) {
+                let count = parseInt(localStorage.getItem("visitorCount"));
+                count++;
+                localStorage.setItem("visitorCount", count);
+                document.getElementById("visitorCount").innerText = count;
+            } else {
+                localStorage.setItem("visitorCount", 1);
+                document.getElementById("visitorCount").innerText = 1;
+            }
+        </script>    
+
+<script src="http://admate3wrcqo2qeuok36b4wncwv7k6deei6riq2w62s36htgyahsaaqd.onion/js/get-banners.js"></script>
+
+            <title>Onion Link List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        .column {
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            box-sizing: border-box;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ccc;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .link-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .link-list li {
+            margin: 10px 0;
+        }
+        .link-list a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+        .link-list a:hover {
+            text-decoration: underline;
+        }
+        .link-list a {
+            target: "_blank";
+        }
+        .image-list img {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .image-list a {
+            display: block;
+            margin: 10px;
+            target: "_blank";
+        }
+    </style>
+</head>
+<h1 class="custom-header">
+    <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span> 
+    <span>&nbsp;</span> <!-- Space between words -->
+    <span>t</span><span>o</span> 
+    <span>&nbsp;</span> 
+    <span>O</span><span>n</span><span>i</span><span>o</span><span>n</span> 
+    <span>&nbsp;</span> 
+    <span>L</span><span>i</span><span>n</span><span>k</span> 
+    <span>&nbsp;</span> 
+    <span>L</span><span>i</span><span>s</span><span>t</span>
+</h1>
+
+<style>
+    .custom-header {
+        background-color: black;
+        color: limegreen; /* Bright green for contrast */
+        font-size: 36px; /* Large text */
+        font-family: "Arial", sans-serif; /* Clean and modern */
+        text-align: center; /* Centered text */
+        padding: 20px; /* Space around the text */
+        border-radius: 10px; /* Soft rounded edges */
+        width: fit-content;
+        margin: 20px auto; /* Centers the header */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px; /* Adds spacing between letters */
+    }
+
+    .custom-header span {
+        display: inline-block;
+        animation: shake 0.3s infinite alternate ease-in-out;
+    }
+
+    @keyframes shake {
+        0% { transform: translateY(-1px) rotate(-1deg); }
+        50% { transform: translateY(1px) rotate(1deg); }
+        100% { transform: translateY(-1px) rotate(-1deg); }
+    }
+
+    /* Adding a slight delay to each letter for a cool effect */
+    .custom-header span:nth-child(odd) {
+        animation-delay: 0.1s;
+    }
+    .custom-header span:nth-child(even) {
+        animation-delay: 0.2s;
+    }
+</style>
+<div class="ads-container">
+    <!-- Left Side: NoScript Message -->
+    
+    
+    <div id="banner-place-468-0"><noscript><div style="width: 468px;height: 60px;display: flex;position: relative;align-items: center;border: 1px dotted;justify-content: center;flex-direction: column;background-color: black;color: white;text-align: center;"><b>Ooops!</b><span>Please <u>enable Javascript</u> in your browser to see ads and support our project</span></div></noscript></div> 
+
+    <!-- Right Side: Advertisement -->
+    <iframe frameborder="0" scrolling="no" 
+        src="http://adsgoxhivg6hqsvc2huiw6duria5zjissacihqjaobm36kc5dpu2atid.onion/468?id=21" 
+        width="468" height="68">
+    </iframe>
+    <iframe frameborder="0" scrolling="no" 
+    src="http://adsgoxhivg6hqsvc2huiw6duria5zjissacihqjaobm36kc5dpu2atid.onion/468?id=21" 
+    width="468" height="68">
+</iframe>
+</div>
+
+<style>
+    /* Container to align items */
+    .ads-container {
+        display: flex;
+        justify-content: space-between; /* Puts one on the left, one on the right */
+        align-items: center;
+        width: 100%; /* Ensures full width */
+        max-width: 1000px; /* Adjusts layout width */
+        margin: 0 auto; /* Centers the entire row */
+        padding: 10px;
+    }
+
+    /* NoScript Message Styling */
+    .noscript-message {
+        width: 468px;
+        height: 60px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        border: 1px dotted white;
+        justify-content: center;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <!-- Moved the last column to the first position -->
+        <div class="column">
+            <h2> Connections.
+                deepweblinks@dnmx.su</h2>
+    
+            <a href="http://ruc4i7xn5qu5uc7fu2sc34r6xl55xhgvxbcs56t4ayvbqo2fmp4pehqd.onion/" target="_blank">
+                <img src="query.gif" alt="query" width="468" height="60">
+            </a>
+            
+
+            <a href="http://tz75oxijdfwnobeh3sn6vfethrz4zqdasylrmp7euntqivbsaubojmyd.onion/" target="_blank">
+                <img src="TORSEARCH.gif" alt="TORSEARCH" width="468" height="60">
+            </a>
+            
+
+            <a href="http://torlgu6zhhtwe73fdu76uiswgnkfvukqfujofxjfo7vzoht2rndyhxyd.onion/" target="_blank">
+                <img src="torland.gif" alt="torland" width="'468" height="60">
+            </a>
+            
+            <a href="http://darkoxfbjibhbb65wtvdnjygyi46a4xrjcakqkrzuw7ch6o7xgxhxmid.onion/" target="_blank">
+                <img src="Darkzone.jpg" alt="Darkzone">
+            </a>
+            <a href="http://free26b3rvqih2usa4jqlpkwj3rirpaqu2wjgvygjvmyrywyu43x56ad.onion/" target="_blank">
+                <img src="Darkreviews.gif" alt="Darkreviews"  width="'468" height="60">
+            </a>
+
+            <a href="http://wikikzps6ms4g7zfpqd3to3ru4cs2dp4vzhyzhwkyave2l7mratspqyd.onion/" target="_blank">
+                <img src="Hiddenwiki.jpg" alt="hidden width="'468" height="60">
+            </a>
+
+            <a href="http://jyi4onjmpaxzbujz3smcscqomyfj6dopks43h53rp3irqhapgnodzwad.onion/" target="_blank">
+                <img src="darkstream.png" alt="darkstream" width="'468" height="60">
+            </a>
+            <a href="http://j26dlfmte3abryjbrj3meclae5bm4quogghtdow2gtojluekf66vrqqd.onion/" target="_blank">
+                <img src="linkdirectorypro.gif" alt="linkdirectorypro" width="'468" height="60">
+            </a>
+            <a href="http://globalslujj25p2zi53devax3a3mkacnqz7v7vq5onzhfvfgn37je2ad.onion/" target="_blank">
+                <img src="global.gif" alt="global" width="'468" height="60">
+            </a>
+
+            <a href="http://vlogmee4ey3xsbugu2bbqoib6m7jjyu5grphzkik3bwyzbsgxbsyrhyd.onion/" target="_blank">
+                <img src="Deepwebblog.gif" alt="Deepwebblog"  width="'468" height="60">
+            </a>
+            <a href="http://wjrev6sjrcj4xeqehse6a6xqyjeqz2bhiwhx3v5bmntiqmkm22d2lsad.onion/" target="_blank">
+                <img src="Onionyellowwiki.gif" alt="Onionyellowwiki" width="'468" height="60">
+            </a>
+            <a href="http://dweben565bzegcmbwcsoxpclrtk5xyvjgofcc5rt3pdivtboop7eeyqd.onion/" target="_blank">
+                <img src="ccc.gif" alt="ccc" width="'468" height="60">
+            </a>
+
+            <a href="http://dwebkjkovsjobzrb45dz6prnlifnapiyp2dba33vcmcsaikr2re4d5qd.onion/?refcode=is4vtzgk4n" target="_blank">
+                <img src="onionland.gif" alt="onionland" width="'468" height="60">
+            </a>
+            
+            <a href="http://aniozgjggq2pzxznogrlpoioks7iu3emj6bwebz3yptl4pkoukzd6kid.onion/" target="_blank">
+                <img src="Ghosthub.gif" alt="Ghosthub" width="'468" height="60">
+            </a>
+
+            <p style="color: red;"> Ads </p>
+
+ <div id="banner-place-285-0"><noscript><div style="width: 285px;height: 200px;display: flex;position: relative;align-items: center;border: 1px dotted;justify-content: center;flex-direction: column;background-color: black;color: white;text-align: center;"><b>Ooops!</b><span>Please <u>enable Javascript</u> in your browser to see ads and support our project</span></div></noscript></div>            
+  <iframe frameborder="0" scrolling="no" src="http://adsgoxhivg6hqsvc2huiw6duria5zjissacihqjaobm36kc5dpu2atid.onion/336?id=21" width="336" height="280"></iframe>
+            <div id="banner-place-285-1"><noscript><div style="width: 285px;height: 200px;display: flex;position: relative;align-items: center;border: 1px dotted;justify-content: center;flex-direction: column;background-color: black;color: white;text-align: center;"><b>Ooops!</b><span>Please <u>enable Javascript</u> in your browser to see ads and support our project</span></div></noscript></div> 
+            
+            <div id="banner-place-285-2"><noscript><div style="width: 285px;height: 200px;display: flex;position: relative;align-items: center;border: 1px dotted;justify-content: center;flex-direction: column;background-color: black;color: white;text-align: center;"><b>Ooops!</b><span>Please <u>enable Javascript</u> in your browser to see ads and support our project</span></div></noscript></div> 
+            <div id="banner-place-285-3"><noscript><div style="width: 285px;height: 200px;display: flex;position: relative;align-items: center;border: 1px dotted;justify-content: center;flex-direction: column;background-color: black;color: white;text-align: center;"><b>Ooops!</b><span>Please <u>enable Javascript</u> in your browser to see ads and support our project</span></div></noscript></div>            
+
+            <div id="banner-place-285-4"><noscript><div style="width: 285px;height: 200px;display: flex;position: relative;align-items: center;border: 1px dotted;justify-content: center;flex-direction: column;background-color: black;color: white;text-align: center;"><b>Ooops!</b><span>Please <u>enable Javascript</u> in your browser to see ads and support our project</span></div></noscript></div>         </div>
+    
+        <!-- Moved the first column to the second position -->
+        <div class="column">
+            <h2> Search Engines </h2>
+            <div class="image-list">
+                
+                <ul class="link-list">
+
+
+                   
+                    <li style="display: flex; align-items: center; font-size: 18px;">
+                        <a href="http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/" 
+                           target="_blank" 
+                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                           Ahmia
+                        </a> 
+                          Search Tor Hidden Services 
+                    </li>
+                   
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://thedude75pphneo4auknyvspskdmcj4xicbsnkvqgwhb4sfnmubkl5qd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Dude
+                    </a> 
+                 The Original Tor Search Engine                </li>
+
+
+                 <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                        OnionLand
+                    </a> 
+                    Search Hidden Services on the Tor Network
+                </li>
+
+                <hr style="border: 1px solid black; width: 100%;">
+
+                    
+                    
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Submarine
+                    </a> 
+                     Search for Hidden Services 
+                                </li>
+
+                                <hr style="border: 1px solid black; width: 100%;">
+
+        
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://tz75oxijdfwnobeh3sn6vfethrz4zqdasylrmp7euntqivbsaubojmyd.onion/index.php" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Tor Search 
+                    </a> 
+                   Tor search Engine                 </li>
+
+                   <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://3666eyedb2c6dlvtys4nkjfxnyfjjielks2fijvmdivqp2noku2fzqqd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Third 666 Eye
+                    </a> 
+                    Top Search engines in Dark Web                 </li>
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://hpuxwf2biakphz6xp74antxdiz6b5rvnq4fzouirtv4suc6kn242s2qd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                        DarkNet Engine 
+                    </a> 
+                    Find Good and Legit Links From Dark web.                 </li>
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       DuckDuckGo
+                    </a> 
+                     Hidden Service that searches the clearnet.                </li>
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                     <li style="display: flex; align-items: center; font-size: 18px;">
+                        <a href="http://2fd6cemt4gmccflhm6imvdfvli3nf7zn6rfrwpsy7uhxrgbypvwf5fad.onion/" 
+                           target="_blank" 
+                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                           Excavator
+                        </a> 
+                         Darknet Saerch Engine                 </li>
+
+                         <hr style="border: 1px solid black; width: 100%;">
+
+
+                     
+                         
+                         <li style="display: flex; align-items: center; font-size: 18px;">
+                            <a href="http://search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion/" 
+                               target="_blank" 
+                               style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                               Deep Search
+                            </a> 
+                            Most Powerful Search Engine on TOR                  </li>
+
+                            <hr style="border: 1px solid black; width: 100%;">
+
+
+                            <li style="display: flex; align-items: center; font-size: 18px;">
+                                <a href="http://6evmkmg4p6r354tjdgvjjzej32mnin6mdfi6zm3lu6qqpulqfvmkfsid.onion/index.php" 
+                                   target="_blank" 
+                                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                   Leek Search
+                                </a> 
+                                Best onion search engine , search cards , transfer etc                </li>
+
+                                <hr style="border: 1px solid black; width: 100%;">
+
+                    
+
+
+                                <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://pvhwsb7a3d2oq73xtr3pzvmrruvswyqgkyahcb7dmbbfftr4qtsmvjid.onion/" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                       Onion Scanner
+                                    </a> 
+                                      Deepweb shop reviews crawler. A list of stores with reviews and ratings. [Verified]                                </li>
+
+                                      <hr style="border: 1px solid black; width: 100%;">
+
+                        
+
+
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://stealth5wfeiuvmtgd2s3m2nx2bb3ywdo2yiklof77xf6emkwjqo53yd.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           Tor Guide
+                                        </a> 
+                                        Tor Guide (manual)  - Whats Is Tor? [Verified]               </li>
+
+
+
+                                        <hr style="border: 1px solid black; width: 100%;">
+
+
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://zb2jtkhnbvhkya3d46twv3g7lkobi4s62tjffqmafjibixk6pmq75did.onion/gdark/search.php" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           GDark
+                                        </a> 
+                                        Darknet Search Engine
+                                    </li>
+
+
+                                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://3mcm3cathoi5eahjeq7e5tgessfktszioxyf4rnx2ug7ab3ilzvgwfyd.onion/site_click.php?site_id=9" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           Tordex Search
+                                        </a> 
+                                        Find anything you re looking for on the deep web without censorship!               </li>
+
+
+
+                                        <hr style="border: 1px solid black; width: 100%;">
+
+
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://3mcm3cathoi5eahjeq7e5tgessfktszioxyf4rnx2ug7ab3ilzvgwfyd.onion/site_click.php?site_id=10" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           Tor66 Search
+                                        </a> 
+                                        Tor66, .onion, search engine, website index, index, .onion list, crawler              </li>
+
+
+                                        <hr style="border: 1px solid black; width: 100%;">
+
+
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://stealth5wfeiuvmtgd2s3m2nx2bb3ywdo2yiklof77xf6emkwjqo53yd.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           Amnesia
+                                        </a> 
+                                        Amnesia is a Darknet Search Engine that prioritize your anonymity. As an advertising platform, we deliver highly effective campaigns, elevating the Darknet design standards.              </li>
+
+                                        <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                                        <var>
+
+                                            
+                                        </var>
+
+
+                                        <li style="display: flex; align-items: center; font-size: 18px;">
+                                            <a href="http://3mcm3cathoi5eahjeq7e5tgessfktszioxyf4rnx2ug7ab3ilzvgwfyd.onion/site_click.php?site_id=216" 
+                                               target="_blank" 
+                                               style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                               Hoodle
+                                            </a> 
+                                            V3 Onion Search Engine              </li>
+
+
+                                            <hr style="border: 1px solid black; width: 100%;">
+
+
+                                            <li style="display: flex; align-items: center; font-size: 18px;">
+                                                <a href="http://uniquelidkc3s2dussvwp473o6dtcaireq2ivgbfts6oh3n7427ojlad.onion/" 
+                                                   target="_blank" 
+                                                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                                   Unique search
+                                                </a> 
+                                                Unique search engine contains only unique sites, does not contain aliases            </li>
+
+
+                                
+                                                <hr style="border: 1px solid black; width: 100%;">
+
+                                        
+
+                </ul>
+
+                <h2> 
+                    Email Provider                     </h2>
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="https://proton.me/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Protonmail
+                    </a> 
+                     Secure Email Based in Switzerland                </li>
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://74b3as5fsvxirkrzxbzukugry5la56ilhsqa4yzwhw7bevcydc22tlid.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       NULL Message
+                    </a> 
+                 Privacy respected self-destructed encrypted messaging system.
+                </li>
+
+                <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://torbox36ijlcevujx7mjb4oiusvwgvmue7jfn2cvutwa6kl6to3uyqad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Tor Box 
+                    </a> 
+                    Hidden Mailbox Service only accessible from TOR                </li>
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://tormailpout6wplxlrkkhjj2ra7bmqaij5iptdmhhnnep3r6f27m2yid.onion/mail/src/login.php" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Tor Mail
+                    </a> 
+                    Free and Secured Anonymity Mail Service
+                </li>
+
+                <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://pflujznptk5lmuf6xwadfqy6nffykdvahfbljh7liljailjbxrgvhfid.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Onion Mail
+                    </a> 
+                    Mailbox that you can Encrypt and browse with Tor                </li>
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                    <li style="display: flex; align-items: center; font-size: 18px;">
+                        <a href="https://www.secmail.com/content/en/108/202189/Home.html" 
+                           target="_blank" 
+                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                           Secure email
+                        </a> 
+                        
+Enables the sending and receiving of
+confidential messages with complete safety.               </li>
+
+<hr style="border: 1px solid black; width: 100%;">
+
+
+
+<li style="display: flex; align-items: center; font-size: 18px;">
+    <a href="http://mail2torjgmxgexntbrmhvgluavhj7ouul5yar6ylbvjkxwqf6ixkwyd.onion/" 
+       target="_blank" 
+       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+        Mail2Tor
+    </a> 
+    Mail2Tor is a free anonymous e-mail service to protect your privacy.                </li>
+
+    <hr style="border: 1px solid black; width: 100%;">
+
+
+
+
+
+
+                <h2> 
+                    Forums/chats/boards                     </h2>
+
+
+                
+
+ <li style="display: flex; align-items: center; font-size: 18px;">
+    <a href="http://koinqhyhoqonkofiiujx3h3koqgzod26elagdzzcltgy6nyqqao7nnad.onion/hiddenchat/" 
+       target="_blank" 
+       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+       Darkzone Forum</a> 
+    Darkzone Forum Community</li>
+
+    <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://koinqhyhoqonkofiiujx3h3koqgzod26elagdzzcltgy6nyqqao7nnad.onion/hiddenchat/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Hidden Chat
+                    </a> 
+                    Secure and anonymous chatroom on the Dark Web                </li>
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://aniozgjggq2pzxznogrlpoioks7iu3emj6bwebz3yptl4pkoukzd6kid.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Ghosthub Forum
+                    </a> 
+                     Explore the Dark Web, Safely and Anonymously                 </li>
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://ruc4i7xn5qu5uc7fu2sc34r6xl55xhgvxbcs56t4ayvbqo2fmp4pehqd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Query                    </a> 
+                    Query is a place to gain and share knowledge. A platform to ask questions and connect with other people.                </li>
+
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://47xbzlgqqwfledigpfevqmqlclr7wbxm4dnzvh4flt5bsndjq53wymad.onion/#/v1/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Onion.chat
+                    </a> 
+                    A secure and anonymous chatroom on the Dark Web.
+                </li>
+
+                <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://ruc4i7xn5qu5uc7fu2sc34r6xl55xhgvxbcs56t4ayvbqo2fmp4pehqd.onion/?page_id=331" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Chit.chat
+                    </a> 
+                    Chitchat on the Dark Web.
+                </li>
+
+                <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="https://cockbox.org/?r=7700" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Cockbox
+                    </a> 
+                      Yeah it’s servers with cocks                </li>
+
+                      <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Shadow Forum
+                    </a> 
+                      Türkçe forum sitelerinden biri daha.                </li>
+
+
+                      <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://answerszuvs3gg2l64e6hmnryudl5zgrmwm3vh65hzszdghblddvfiqd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Hidden Answers
+                    </a> 
+                 Deep Web Forum                </li>
+
+
+                 <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://dnpastenol3j46sl2vljagla3cfd7vofach2vt6gmy5xa7yhjiwkw6yd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Dark Net Paste
+                    </a> 
+                     Another Paste Bin                 </li>
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Facebook
+                    </a> 
+                 The real Facebook's Onion domain. Claim not to keep logs. Trust them at your peril.                </li>
+
+
+                 <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://hell2ker5i3xsy6szrl2pulaqo3jhcz6pt7ffdxtuqjqiycvmlkcddqd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       HeLL Forum
+                    </a> 
+                    HeLL Forum - HeLL Reloaded is back!            </li>
+                
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                    <li style="display: flex; align-items: center; font-size: 18px;">
+                        <a href="http://nzdnmfcf2z5pd3vwfyfy3jhwoubv6qnumdglspqhurqnuvr52khatdad.onion/" 
+                           target="_blank" 
+                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                           NZ Forums 
+                        </a> 
+                        Darknet Market education and discussionR           </li>
+
+                        <hr style="border: 1px solid black; width: 100%;">
+
+
+                        <li style="display: flex; align-items: center; font-size: 18px;">
+                            <a href="http://thetorfkxlzarp664e3zqjv5tl6aypd2hhokmpcmrqsogytenpgtt2ad.onion/" 
+                               target="_blank" 
+                               style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                               The Tor Forum 
+                            </a> 
+                             Ask to hear hidden answersRECOMMEND          </li>
+
+                             <hr style="border: 1px solid black; width: 100%;">
+
+
+
+
+
+
+
+                <h2> 
+                    News                     </h2>
+                    
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://tcecdnp2fhyxlcrjoyc2eimdjosr65hweut6y7r2u6b5y75yuvbkvfyd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Active at Darknet Markets?
+                    </a> 
+                    Onion set up by the Police and the Judicial Authorities of the Netherlands, listing Active, identified, and arrested Darknet Market operators.                </li>
+
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://pitchprash4aqilfr7sbmuwve3pnkpylqwxjbj2q5o4szcfeea6d27yd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Pitch
+                    </a> 
+                      Pitch is a free tor only social media platform that allows users to share posts and follow other users                </li>
+
+
+                      <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://cbsrdi4vw4orqehzp2f4a4z36pmqbr2jsbf3piofifncqdnbx6movryd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       RadioCBS
+                    </a> 
+                     Comunicações Brasileira de Sistemas – A Rádio dos profissionais de Tecnologia da Informação.                </li>
+
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://ovgl57qc3a5abwqgdhdtssvmydr6f6mjz6ey23thwy63pmbxqmi45iid.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Flashlight 
+                    </a> 
+                     An Info Beam in the Darkweb
+                </li>
+
+                <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <var>
+                    <li style="display: flex; align-items: center; font-size: 18px;">
+                        <a href="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/" 
+                           target="_blank" 
+                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                           DarknetLive
+                        </a> 
+                         The Real Darknet Live                    </li>
+
+                         <hr style="border: 1px solid black; width: 100%;">
+
+
+                </var>
+
+
+            </div>
+            
+        </div>
+    
+        <!-- The middle column remains in place -->
+        <div class="column">
+            <h1>Directory </h1>
+            <ul class="link-list">
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://free26b3rvqih2usa4jqlpkwj3rirpaqu2wjgvygjvmyrywyu43x56ad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Dark Reviews
+                    </a> 
+                     Reviews and Ratings of Onion Hidden links and Sites                 </li>
+
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://tastr5kwcabstvuw5flgc4ij6itln65gtmhows4uu2dbabcbtuhv5tqd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Tasty Onions 
+                    </a> 
+                    Tasty Onions – Deepweb Link Directory                </li>
+
+
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://koinqhyhoqonkofiiujx3h3koqgzod26elagdzzcltgy6nyqqao7nnad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                        Agora
+                    </a> 
+                     A DeepWeb Catalogue + Find the best links on the Darknet                </li>
+
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://torfoxuq7kh7bap7iygmmryjuq2hilcm6dw5kk7c3h5hu6ibwoth5dyd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Torfox
+                    </a> 
+                    Trusted Darknet Links Portal                </li>
+
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://darkobds5j7xpsncsexzwhzaotyc4sshuiby3wtxslq5jy2mhrulnzad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Darkzone Listing 
+                    </a> 
+                 A Deepweb Link Listings 
+                </li>
+                
+
+                <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://darkoxfbjibhbb65wtvdnjygyi46a4xrjcakqkrzuw7ch6o7xgxhxmid.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       DARKZONE ONION LINKS 
+                    </a> 
+                     ! ! ! BEST ONION LINKS – DEEP WEB LINKS – TOP ONION SITES – FRESH LINKS – Forums                 </li>
+                
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://blinkxxvrydjgxao4lf6wqgxqbddw4xkawbe2zacs7sqlfxnb5ei2xid.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                        Blinklist
+                    </a> 
+                    BlinkList – Free darknet Classify                 </li>
+                
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Fresh Onions
+                    </a> 
+                     Fresh Onions – Search Engine and .Onion website list                 </li>
+
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://wclekwrf2aclunlmuikf2bopusjfv66jlhwtgbiycy5nw524r6ngioid.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Hidden Links 
+                    </a> 
+                    Smart picture-based DeepWeb links catalogue + Telegram channel                </li>
+
+
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://6o7yjljdqx3ag5br7kcq64a5hipzid3lrp5ucjrxkkaj3lqjnfinmuqd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       ProductDir
+                    </a> 
+                     The catalogue of all products of TOR with ratings                </li>
+
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://nf2nip7s2235bzv4zw2vpndctw2bkz6qgzut6n7wx62sud5m27o5fwad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       The Hidden Wiki 
+                    </a> 
+                    The official HW link. Operating since 2014                </li>
+
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://zaejy2lskzkbxo5vlc3qxs4mpwg25lgoadwtwxquvhkkq5eid43oqryd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Light Hidden Wiki 
+                    </a> 
+                    A catalogue-only version of the official Hidden Wiki                </li>
+
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://thkdqidwkss3wntyjsd4uyy3i25tiu6hkogd62hd5cxr4ep6kpftwuyd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       YellowDir
+                    </a> 
+                      Yellow label websites of TOR. YellowDir link catalogue contains hundreds of relevant link of TOR                </li>
+
+
+                      <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://u5lyidiw4lpkonoctpqzxgyk6xop7w7w3oho4dzzsi272rwnjhyx7ayd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Hidden Reviews 
+                    </a> 
+                    All reviews of the DeepWeb + Link catalogue. Reviews are stored on blockchain and never deleted.                </li>
+
+
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://l7vh56hxm3t4tzy75nxzducszppgi45fyx2wy6chujxb2rhy7o5r62ad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       DarkDir
+                    </a> 
+                       DarkDir is the largest and most resilient directory of working and reliable Tor links.                </li>
+
+
+
+                       <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://wjrev6sjrcj4xeqehse6a6xqyjeqz2bhiwhx3v5bmntiqmkm22d2lsad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Onion Yellow Wiki
+                    </a> 
+                    Onion Yellow Wiki – contains hundreds of relevant Onion links                </li>
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://oniodtu6xudkiblcijrwwkduu2tdle3rav7nlszrjhrxpjtkg4brmgqd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       OnionDir
+                    </a> 
+                      Onion Dir                </li>
+
+                      <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://deepweb4wt3m4dhutpxpe7d7wxdftfdf4hhag4sizgon6th5lcefloid.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Deepweb
+                    </a> 
+                     Deepweb.net stands as a pivotal guide to the elusive and often misunderstood deep web                 </li>
+
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://wikikzps6ms4g7zfpqd3to3ru4cs2dp4vzhyzhwkyave2l7mratspqyd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       The Hidden wiki
+                    </a> 
+                     The Hidden Wiki – Verified Onion Links Updated Daily                </li>
+
+
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://darkgcjwg7x5sxg3dr72zniep5bx3s7u23irqlrskiynxne3jhnq4aid.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       DarkGlobal Wiki 
+                    </a> 
+                    Valid Onion Links Of Dark part of glob                </li>
+
+
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://ruc4i7xn5qu5uc7fu2sc34r6xl55xhgvxbcs56t4ayvbqo2fmp4pehqd.onion/?page_id=345" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                        Query Dir
+                    </a> 
+Query link list                </li>
+
+
+
+<hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://hgzqgqunlejgxruvcthlpk3pywgkci3kkubhnvlv2rgveusz3n6qarad.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       VCS Links
+                    </a> 
+                     VCS Onion Links | Marketplaces , forums , search engines                </li>
+
+
+
+                     <hr style="border: 1px solid black; width: 100%;">
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://6o7yjljdqx3ag5br7kcq64a5hipzid3lrp5ucjrxkkaj3lqjnfinmuqd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       ConnectCore
+                    </a> 
+                    Tor darknet Community                 </li>
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+            </ul>
+
+
+
+            <h1>
+                 Commercial
+                 </h1>
+
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="http://cxhxevlonvjmzxma67rizsjvddicj7hqvjqk5a5wfu3373oqb2zafwyd.onion/affiliates/campaign/3b19964402e2cfcaf77239e7d0d03562f9bcf867" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                   SmokersCo
+                </a> 
+                 Cannabis Shop – Your Trust seller in Europe!            </li>
+
+                 <hr style="border: 1px solid black; width: 100%;">
+
+
+
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="http://cebulka7uxchnbpvmqapg5pfos4ngaxglsktzvha7a5rigndghvadeyd.onion/" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                   Cebulka
+                </a> 
+                  Polish onion forum with PGP authorization and escrow system Created in 2013 after fall of Polish Board and Market and renewed in 2016.            </li>
+
+
+
+                  <hr style="border: 1px solid black; width: 100%;">
+
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion/" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                   Ransomware Group Sites
+                </a> 
+                 A very slight and simple website listing active leak sites of ransomware groups.            </li>
+
+
+
+                 <hr style="border: 1px solid black; width: 100%;">
+
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="http://emzjtmpz53j2rcu45ifkn2n5i3ltissiakmhmauiggjozwmeuz4ttiad.onion/wp/" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                   Octopus Market
+                </a> 
+                 Build with passion and only one mission in mind. Security, Speed, Safety, and Anonymity            </li>
+
+
+
+                 <hr style="border: 1px solid black; width: 100%;">
+
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="http://drughubb7lmqymhpq24wmhihloii3dlp3xlqhz356dqdvhmkv2ngf4id.onion/" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                    DrugHub
+                </a> 
+                Walletless pay, Mandatory PGP 2FA             </li>
+
+
+                <hr style="border: 1px solid black; width: 100%;">
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://hn2paw7zaahbikbejiv6h22zwtijlam65y2c77xj2ypbilm2xs4bnbid.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                        We the North
+                    </a> 
+                    CANADA ONLY - Autoshop, Sports Betting            </li>
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                    <li style="display: flex; align-items: center; font-size: 18px;">
+                        <a href="https://exchanger.infinity.taxi/" 
+                           target="_blank" 
+                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                            Infinity Exchange
+                        </a> 
+                        Instant cryptocurrency exchange for Bitcoin, Bitcoin Cash, Litecoin and Monero.           </li>
+
+
+                        <hr style="border: 1px solid black; width: 100%;">
+
+                        <li style="display: flex; align-items: center; font-size: 18px;">
+                            <a href="http://darktrustyzmsgogz4vcwrl7z6w2pjhp6pkihnanc3q237yytgptlqad.onion" 
+                               target="_blank" 
+                               style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                DarknetTrust
+                            </a> 
+                            Database of vendor information from current and historic markets.            </li>
+
+
+                            <hr style="border: 1px solid black; width: 100%;">
+
+
+                            <li style="display: flex; align-items: center; font-size: 18px;">
+                                <a href="http://shoprypxphsufyldigdn34kbjbsnjnrmv2z34yc5al5lkmveqcbex2qd.onion/" 
+                                   target="_blank" 
+                                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                   DarkZone MarketPlace
+                                </a> 
+                                We make shopping convenient and easy / Buy Sell Documents , Drugs , Services , Electronics etc          </li>
+
+                                <hr style="border: 1px solid black; width: 100%;">
+
+
+                                <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://darkcontp2g3vzevjygmslkwpfl6cvuq2yjjgsqzniuvbofzziqhptid.onion/#" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                       Darkcontp2
+                                    </a> Index Page for Markets, Vendors, Socials and Services </li>
+
+                                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                                <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://u5n3wlq5nk7db3a7wjps3fmw3igl5dtvimy6xgqi7fgevji5jqyqhpqd.onion/index.html" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                       Darkcatalog
+                                    </a> Best Darknet Markets List  </li>
+
+                                    <hr style="border: 1px solid black; width: 100%;">
+
+            <h1>
+Web & image hosting                </h1>
+
+               
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="http://hzwjmjimhr7bdmfv2doll4upibt5ojjmpo3pbp5ctwcg37n3hyk7qzid.onion/shared-single-hop-onion-hosting/" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                   Ablative Hosting
+                </a> 
+                Free Secured Clearnet and Tor .Onion Web Hosting            </li>
+            
+
+                <hr style="border: 1px solid black; width: 100%;">
+
+            
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="http://kaizushih5iec2mxohpvbt5uaapqdnbluaasa2cmsrrjtwrbx46cnaid.onion/page.php" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                   Kaizushi Little Onion
+                </a> 
+            This is a Hosting Service with a Shared Server            </li>
+
+
+
+            <hr style="border: 1px solid black; width: 100%;">
+
+
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="http://danielas3rtn54uwmofdo3x2bsdifr47huasnmbgqzfrec5ubupvtpid.onion/mail/" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                   Danwin1210
+                </a> 
+                 Daniel Winzen’s personal site which he offers free public email on. No Javascript.            </li>
+
+
+                 <hr style="border: 1px solid black; width: 100%;">
+
+
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="http://dwebkjkovsjobzrb45dz6prnlifnapiyp2dba33vcmcsaikr2re4d5qd.onion/?refcode=is4vtzgk4n" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                   Onionland Hosting
+                </a> 
+                 High Speed Network with unlimited traffic            </li>
+
+
+                 <hr style="border: 1px solid black; width: 100%;">
+
+                 <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="https://reycdxyc24gf7jrnwutzdn3smmweizedy7uojsa7ols6sflwu25ijoyd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                        Out3r Space
+                    </a> 
+                    Open-source darknet based wikipedia featuring articles about tor related services, stories, arrests etc.             </li>
+
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="https://hostmenow.org/backstage/aff.php?aff=35" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                   HostMeNow                </a> 
+                 Find Your Domain Name            </li>
+
+
+                 <hr style="border: 1px solid black; width: 100%;">
+
+                 <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://dumpliwoard5qsrrsroni7bdiishealhky4snigbzfmzcquwo3kml4id.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                        Dump.li
+                    </a> 
+                    Tor image uploading service (no account required).             </li>
+
+                    <hr style="border: 1px solid black; width: 100%;">
+
+            <li style="display: flex; align-items: center; font-size: 18px;">
+                <a href="http://fhostingineiwjg6cppciac2bemu42nwsupvvisihnczinok362qfrqd.onion/" 
+                   target="_blank" 
+                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                   Freedom Hosting Reloaded
+                </a> 
+                  Anonymous Freehosting with PHP/MySQL Support.            </li>
+
+                  <hr style="border: 1px solid black; width: 100%;">
+
+
+                  <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://anonhfaxxubqzl47gkinxyguu4v2w5vmz7ibhet4a27j5fo4ixibp7id.onion/faq.php" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       Anon hosting
+                    </a> 
+                    Hosting hidden service             </li>
+            
+                    <hr style="border: 1px solid black; width: 100%;">
+
+            
+                    <li style="display: flex; align-items: center; font-size: 18px;">
+                        <a href="http://oju4yn237c6hjh42qothvpreqecnqjhtvh4sgn3fqmsdvhu5d5tyspid.onion/" 
+                           target="_blank" 
+                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                          Easy Image Upload
+                        </a> 
+                        Allowed JPEG,GIF,WebP and PNG. Multiple files upload is supported.            </li>
+
+                        <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                        <li style="display: flex; align-items: center; font-size: 18px;">
+                            <a href="http://swonderstzr43aczpcwdoyc25vwxngyromja7pyb5sf26ap3v535sxqd.onion/" 
+                               target="_blank" 
+                               style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                               snapWONDERS
+                            </a> 
+                            Deep digital media analysis, format conversions, scrubbing & regeneration             </li>
+
+
+                            <hr style="border: 1px solid black; width: 100%;">
+
+                            <li style="display: flex; align-items: center; font-size: 18px;">
+                                <a href="http://hostingsczzwehjldbkhzesfkwdijp5cqbmffv5rtqnvtd72erzahdyd.onion/" 
+                                   target="_blank" 
+                                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                   Web hosting
+                                </a> 
+                                Apache, PHP7, MySQL, SFTP Access             </li>
+
+                                <hr style="border: 1px solid black; width: 100%;">
+
+            <h1>
+                Other                </h1>
+
+
+                <li style="display: flex; align-items: center; font-size: 18px;">
+                    <a href="http://admate3wrcqo2qeuok36b4wncwv7k6deei6riq2w62s36htgyahsaaqd.onion/" 
+                       target="_blank" 
+                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                       AdMate
+                    </a> 
+                      is an innovative advertising platform of TOR that connects advertisers and publishers                                 </li>
+                
+
+                      <hr style="border: 1px solid black; width: 100%;">
+
+                               
+                            <li style="display: flex; align-items: center; font-size: 18px;">
+                                <a href="https://bible4u2lvhacg4b3to2e2veqpwmrc2c3tjf2wuuqiz332vlwmr4xbad.onion/" 
+                                   target="_blank" 
+                                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                   Bible4u
+                                </a> 
+                               Uncensored Bible for Darknet                             </li>
+                            
+
+                               <hr style="border: 1px solid black; width: 100%;">
+
+                            
+                            <li style="display: flex; align-items: center; font-size: 18px;">
+                                <a href="http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/" 
+                                   target="_blank" 
+                                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                   Tor Status
+                                </a> 
+                                 Tor Network Status                             </li>
+
+
+                                 <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                                 <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://kbhcl3suo7mebwn5iamnncuopqlraqzygsuizubjvmtyiepe7j4xvlad.onion/" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                       S.Dock
+                                    </a> 
+                                    DW intel. Vendor reviews, various guides and blog. Run by many co-authors            </li>
+                
+
+                                    <hr style="border: 1px solid black; width: 100%;">
+
+                
+                            <li style="display: flex; align-items: center; font-size: 18px;">
+                                <a href="https://www.guardian2zotagl6tmjucg3lrhxdk4dw3lhbqnkvvkywawy3oqfoprid.onion/europe" 
+                                   target="_blank" 
+                                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                   The Guardian
+                                </a> 
+                                News, sport and opinion                            </li>
+                
+
+                                <hr style="border: 1px solid black; width: 100%;">
+
+
+                                <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://l5b5ugkok5owt5w7xz7fvrvd75io2hvnao4c4gonidjmkqsyifwkdryd.onion/" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                        Darknet Street
+                                    </a> 
+                                    See what People are talking about                                </li>
+
+                                   
+                                    <hr style="border: 1px solid black; width: 100%;">
+
+                            
+
+                            <li style="display: flex; align-items: center; font-size: 18px;">
+                                <a href="http://adsgoxhivg6hqsvc2huiw6duria5zjissacihqjaobm36kc5dpu2atid.onion/" 
+                                   target="_blank" 
+                                   style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                   AdsGo
+                                </a> 
+                                An innovative banner advertising network for website advertising and monetization                            </li>
+
+                            <var>
+                                
+                                <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                                <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://libraryfyuybp7oyidyya3ah5xvwgyx6weauoini7zyz555litmmumad.onion/" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                       Just Another Library
+                                    </a> 
+                                     Books, Courses & Art                                </li>
+
+
+                                     <hr style="border: 1px solid black; width: 100%;">
+
+
+                                <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="https://freebitco.in/?r=50573132" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                       Free Bitcoin 
+                                    </a> 
+                                     Earn Free Cryptocurrency                                </li>
+
+
+                                     <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                                     <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           Blockchair
+                                        </a> 
+                                        Universal blockchain explorer and search engine                                </li>
+
+
+                                        <hr style="border: 1px solid black; width: 100%;">
+
+
+                                <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://libraryfyuybp7oyidyya3ah5xvwgyx6weauoini7zyz555litmmumad.onion/archives/books/uncategorized/The%20Drug%20Users%20Bible%20%5BExtended%20Edition%5D%20-%20Dominic%20Milton%20Trott.pdf" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                        The drug user Bible
+                                    </a> 
+                                    Detailed drug safety manual covering many different substance classes. Note - this is a PDF download.  </li>
+
+
+                                    <hr style="border: 1px solid black; width: 100%;">
+
+                               
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://cvrnj2qjpgeibqxppo74hvrm5kemioa7uy7ly7mu72sb7brsjsgvl6id.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                            Darkipedia
+                                        </a> 
+                                        Open-source darknet based wikipedia featuring articles about tor related services, stories, arrests etc.                                 </li>
+    
+                                    </li>
+                               
+
+                                    <hr style="border: 1px solid black; width: 100%;">
+
+                               
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://lottery7omycuaza6pfxvhh47gazqsvdekjdtozl5tzbazq3jk5a45yd.onion/home/t8fY3RkP" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                       Hidden Lottery
+                                    </a> 
+                                     A fun online lottery that respects your privacy.                                </li>
+
+
+                                     <hr style="border: 1px solid black; width: 100%;">
+
+
+                                     <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://p53lf57qovyuvwsc6xnrppyply3vtqm7l6pcobkmyqsiofyeznfu5uqd.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           ProRepublica
+                                        </a> 
+                                    Investigative Journalism and News.                                 </li>
+
+
+                                    <hr style="border: 1px solid black; width: 100%;">
+
+
+                                <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://vlogmee4ey3xsbugu2bbqoib6m7jjyu5grphzkik3bwyzbsgxbsyrhyd.onion/" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                       DeepWeb Vlog
+                                    </a> 
+                                     Free and anonymous blogging podium                                </li>
+
+                                     <hr style="border: 1px solid black; width: 100%;">
+
+
+                                     <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://darkzzx4avcsuofgfez5zq75cqc4mprjvfqywo45dfcaxrwqg6qrlfid.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           Darknet Live
+                                        </a> 
+                                          Popular news site about Darknet matters [Verified]                                </li>
+
+                                          <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                                          <li style="display: flex; align-items: center; font-size: 18px;">
+                                            <a href="http://nv3x2jozywh63fkohn5mwp2d73vasusjixn3im3ueof52fmbjsigw6ad.onion/" 
+                                               target="_blank" 
+                                               style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                               Comic Book Library
+                                            </a> 
+                                              Collection of comic books, largely independent.                </li>
+
+                                              <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                                     <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://flibustaongezhld6dibs2dps6vm4nvqg2kp7vgowbu76tzopgnhazqd.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           Flibusta
+                                        </a> 
+                                        Book search on Flibusta                                </li>
+
+                                        <hr style="border: 1px solid black; width: 100%;">
+
+
+                                        <li style="display: flex; align-items: center; font-size: 18px;">
+                                            <a href="http://thehidwkd3prjpt6ilwzm3m6w4yudzsjqsmvjahqdirhrmmmiqr4qjqd.onion/wiki/Libraries " 
+                                               target="_blank" 
+                                               style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                               Libraries
+                                            </a> 
+                                            Libraries A more complete list.             </li>
+
+                                            <hr style="border: 1px solid black; width: 100%;">
+
+
+
+
+
+                                <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://theyoshxgvcjm4s2xdt6zcjym4kgskibrlos6fai26yes4bhpia5z7qd.onion/" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                       TheYosh.nl 
+                                    </a> 
+                                    Free information for everybody.                               </li>
+
+                                    <hr style="border: 1px solid black; width: 100%;">
+
+
+
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://sdolvtfhatvsysc6l34d65ymdwxcujausv7k5jk4cy5ttzhjoi6fzvyd.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           SecureDrop
+                                        </a> 
+                                          Share and accept documents securely.             </li>
+
+                                          <hr style="border: 1px solid black; width: 100%;">
+
+                                
+
+
+                                <li style="display: flex; align-items: center; font-size: 18px;">
+                                    <a href="http://guideeedvgbpkthetphncab5aqj7dp5t74y7vxsoonnvmaeamq74vuqd.onion/" 
+                                       target="_blank" 
+                                       style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                       Tor Guide
+                                    </a> 
+                                    Instructions for Tor / Deep Web                                </li>
+
+                                    <hr style="border: 1px solid black; width: 100%;">
+
+                                    
+                    
+                                    
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://strongerw2ise74v3duebgsvug4mehyhlpa7f6kfwnas7zofs3kov7yd.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           Stronghold Paste
+                                        </a> 
+                                          Simple pastebin.                </li>
+
+                                          <hr style="border: 1px solid black; width: 100%;">
+
+                    
+                    
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://anonyradixhkgh5myfrkarggfnmdzzhhcgoy2v66uf7sml27to5n2tid.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           Deepweb Radio
+                                        </a> 
+                                         RadioService operating over TOR.              </li>
+
+                                         <hr style="border: 1px solid black; width: 100%;">
+
+                    
+                    
+                                    <li style="display: flex; align-items: center; font-size: 18px;">
+                                        <a href="http://lgmtjgfpqk6hpik7yygkhavqivn6wsmfa7s7vszmcxwqkpwodinbhnad.onion/" 
+                                           target="_blank" 
+                                           style="color: limegreen; font-weight: bold; font-size: 20px; margin-right: 10px;">
+                                           No Tone
+                                        </a> 
+                                        Tunes               </li>
+                    
+                                
+                    
+                    
+                    
+                                
+
+
+
+
+
+                                <var>
+                                
+                                </var>
+                            </var>
+
+
+
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p class="copyright">
+            © OLL 2024 - 2025
+        </p>
+        
+        <!-- First Link -->
+        <div class="scroll-container">
+            <a href="http://ahbjmi35wmy5irrctbnkfm4wpnvt47lep6azuogxenrrtlte2mu6fdyd.onion/" 
+               target="_blank" 
+               class="scroll-text">
+               ahbjmi35wmy5irrctbnkfm4wpnvt47lep6azuogxenrrtlte2mu6fdyd.onion/            </a>
+        </div>
+    
+        <!-- Second Link -->
+        <div class="scroll-container">
+            <a href="http://ybirwthgc75suzw3dvpsdwjgzx7zqz7xhiej5m353s4ld6dtysw6thqd.onion/" 
+               target="_blank" 
+               class="scroll-text">
+               ybirwthgc75suzw3dvpsdwjgzx7zqz7xhiej5m353s4ld6dtysw6thqd.onion           </a>
+        </div>
+    </div>
+
+    <style>
+        .footer {
+            display: flex;
+            justify-content: flex-end; /* Moves content to the right */
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ccc; /* Adjust as needed */
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    
+        .copyright {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            overflow: hidden;
+            width: 100%;
+        }
+    
+        .scroll-text {
+            display: inline-block;
+            color: limegreen;
+            text-decoration: none;
+            white-space: nowrap;
+            position: relative;
+            animation: scroll 20s linear infinite;
+        }
+    
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    
+        .copyright a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+
+<div>
+    <a href="http://sz5h6tiqkdkfl55qa3kcxgzck3xeffo6cso7sjpc7hc7sr3vghdyicqd.onion/in/ec26df5268516a566ffd6984f273bbdef0452982" target="_blank" rel="noopener noreferrer">
+        <img src="http://sz5h6tiqkdkfl55qa3kcxgzck3xeffo6cso7sjpc7hc7sr3vghdyicqd.onion/images/vote_me.jpg" 
+             alt="Vote for me">
+    </a>
+
+    <a href="http://darktop2zt3653rbrfkr7rldpcw4piagr7hifw7wo6eg5j5ojatczdad.onion/" target="_blank" rel="noopener noreferrer">
+        <img src="http://darktop2zt3653rbrfkr7rldpcw4piagr7hifw7wo6eg5j5ojatczdad.onion/button.php?u=OnionLinklist" 
+             alt="DarkTop List. Top darknet sites." 
+             border="0">
+    </a>
+</div>
+
+<div>
+
+<div style="text-align: center; padding: 10px; background-color: #222; color: #fff; font-family: Arial, sans-serif; border-radius: 5px;">
+    <p style="margin: 0; font-size: 16px; font-weight: bold;">Help keep this project alive</p>
+    <p style="margin: 5px 0; font-size: 14px; color: #f2a900;">BTC Address: <span style="font-weight: bold;">1DVpPKiFp7SSWuVtMwuPZSztnyTLPiShKV</span></p>
+</div>
+
+
+<style>
+    /* Footer Styling */
+    .footer {
+        text-align: center;
+        padding: 15px;
+        background-color: black;
+        color: limegreen;
+        font-size: 14px;
+    }
+
+    /* Copyright Text */
+    .copyright {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    /* Scrolling Link Container (Each Link in Separate Div) */
+    .scroll-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: 10px; /* Space between the two links */
+    }
+
+    /* Scrolling Text */
+    .scroll-text {
+        display: inline-block;
+        color: limegreen;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        animation: scroll-left 10s linear infinite;
+    }
+
+    .scroll-text:hover {
+        text-decoration: underline;
+    }
+
+    /* Keyframes for Scrolling Effect */
+    @keyframes scroll-left {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* Date & Time Box */
+    .datetime-container {
+        font-size: 12px;
+        padding: 10px;
+        border: 2px solid limegreen;
+        display: inline-block;
+        border-radius: 5px;
+        background-color: black;
+        color: limegreen;
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+
+
+<!-- Date & Time Container -->
+<div class="datetime-container">
+    <p id="date"></p>
+    <p id="time"></p>
+</div>
+
+<script>
+    function updateDateTime() {
+        let now = new Date();
+        let date = now.toDateString();
+        let time = now.toLocaleTimeString();
+        
+        document.getElementById("date").innerText = date;
+        document.getElementById("time").innerText = time;
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+</script>
+
+<script>getBanners("http://admate3wrcqo2qeuok36b4wncwv7k6deei6riq2w62s36htgyahsaaqd.onion/api/get-banner/9Yy9QPWgvWWfi57s64vo9lMgxvYtE2zIW4NdhvbdN8oodftuQS/type/468-60/count/1");</script> 
+<script>getBanners("http://admate3wrcqo2qeuok36b4wncwv7k6deei6riq2w62s36htgyahsaaqd.onion/api/get-banner/9Yy9QPWgvWWfi57s64vo9lMgxvYtE2zIW4NdhvbdN8oodftuQS/type/285-200/count/5");</script> 
+</html>
